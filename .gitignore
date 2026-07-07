@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Generated artifacts (regenerate with main.py generate / train)
+data/transactions.csv
+models/*.joblib
+reports/metrics.json
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

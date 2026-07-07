@@ -1,0 +1,61 @@
+{
+  "system_name": "Fraud Detection System for Digital Payments and Banking Transactions",
+  "team": {
+    "leader": {"name": "Yasir Parveez", "roll_no": "2K23/CSM/146", "github": "Yasirpz"},
+    "member": {"name": "Abdul Fatah", "roll_no": "2K23/CSM/03"}
+  },
+  "peas": {
+    "performance_measures": [
+      "fraud_detection_recall",
+      "false_positive_rate",
+      "transaction_latency_ms",
+      "financial_loss_prevented",
+      "model_drift_adaptability"
+    ],
+    "environment": "Digital banking and payment gateway infrastructure processing real-time transaction streams from ATMs, POS terminals, mobile apps, and web portals",
+    "actuators": [
+      "transaction_block_approve_module",
+      "alert_notification_system",
+      "account_restriction_module",
+      "fraud_case_management_update"
+    ],
+    "sensors": [
+      "transaction_data_stream",
+      "device_geolocation_sensor",
+      "behavioral_biometric_sensor",
+      "historical_account_database"
+    ]
+  },
+  "environment_classification": {
+    "observability": {
+      "choice": "Partially Observable",
+      "justification": "The system cannot directly observe the true intent of the user or whether a card was physically stolen."
+    },
+    "agents": {
+      "choice": "Multi-agent",
+      "justification": "The system operates against adaptive adversarial agents (fraudsters) who change strategies over time."
+    },
+    "determinism": {
+      "choice": "Stochastic",
+      "justification": "Identical transaction features can result in either a legitimate or fraudulent outcome depending on hidden factors."
+    },
+    "episodicity": {
+      "choice": "Sequential",
+      "justification": "Each decision depends on prior account history, and current actions affect future evaluations."
+    },
+    "dynamics": {
+      "choice": "Dynamic",
+      "justification": "Fraud patterns and user behavior continuously evolve while the system operates."
+    },
+    "discreteness": {
+      "choice": "Continuous",
+      "justification": "Transaction amounts, timestamps, coordinates, and risk scores are continuous-valued."
+    }
+  },
+  "utility_function": "U = 0.7*Fraud_Caught - 0.3*False_Positive_Rate",
+  "decision_thresholds": {
+    "approve_below": 0.35,
+    "hold_for_review": "0.35 - 0.70",
+    "block_above_or_equal": 0.70
+  }
+}
