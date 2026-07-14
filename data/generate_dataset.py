@@ -5,7 +5,7 @@ Generates a synthetic, realistic banking/payments transaction dataset for the
 Fraud Detection System (PEAS System G) assignment.
 
 Why synthetic data?
-Real fraud datasets (e.g. Kaggle's "Credit Card Fraud Detection") cannot be
+Real fraud  datasets (e.g. Kaggle's "Credit Card Fraud Detection") cannot be
 downloaded automatically in every environment and are heavily PCA-anonymized,
 which makes the feature set unreadable for a course demo. This generator
 instead builds a labeled dataset whose columns map DIRECTLY onto the Sensors
