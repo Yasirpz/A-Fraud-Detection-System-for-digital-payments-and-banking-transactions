@@ -1,7 +1,7 @@
 """
 predict.py
 ----------
-Bare-bones Command-Line Interface (CLI) for the Fraud Detection AI/ML module.
+Bare-bones  Command-Line Interface (CLI) for the Fraud Detection AI/ML module.
 This is the "functional AI/ML module running via CLI" requested for Lab 1 --
 it loads the trained model and scores a single transaction in real time,
 then maps the risk score onto the Actuators defined in the PEAS specification
