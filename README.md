@@ -13,7 +13,7 @@
 
 ## 1. What this repository is
 
-This repo contains the **working, runnable AI/ML module** that backs the PEAS
+This repo contains the **working, runnable AI/ML module** that backs  the PEAS
 specification from Assignment 1 (see [`PEAS_specification.json`](PEAS_specification.json)).
 It was built to satisfy the Lab 1 clarification below (Option A: implementing
 the module that will later be used in the FYP): a **bare-bones, functional
