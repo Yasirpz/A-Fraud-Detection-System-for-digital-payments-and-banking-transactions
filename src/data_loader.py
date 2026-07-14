@@ -1,7 +1,7 @@
 """
 data_loader.py
 ---------------
-Loads the transactions CSV and prepares train/test feature matrices.
+Loads the  transactions CSV and prepares train/test feature matrices.
 Encapsulates the feature engineering shared by training and inference so the
 CLI (predict.py) uses the exact same encoding as training (train.py).
 """
